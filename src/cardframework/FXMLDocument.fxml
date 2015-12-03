@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="725.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cardframework.FXMLDocumentController">
+    <children>
+        <VBox layoutX="213.0" layoutY="192.0" AnchorPane.bottomAnchor="191.0" AnchorPane.leftAnchor="213.0" AnchorPane.rightAnchor="213.0" AnchorPane.topAnchor="192.0">
+            <children>
+                <FlowPane id="playerPlayPane" fx:id="playerPlayPane" prefHeight="146.0" prefWidth="427.0" style="-fx-border-color: #000000;" VBox.vgrow="ALWAYS" />
+                <TextField id="playerScoreField" fx:id="playerScoreField" editable="false" focusTraversable="false" style="-fx-background-color: #00000000;" />
+                <FlowPane id="dealerPlayPane" fx:id="dealerPlayPane" prefHeight="146.0" prefWidth="427.0" style="-fx-border-color: #000000;" VBox.vgrow="ALWAYS" />
+                <TextField id="dealerScoreField" fx:id="dealerScoreField" editable="false" focusTraversable="false" style="-fx-background-color: #00000000;" />
+            </children>
+        </VBox>
+        <TextField id="tokensField" fx:id="tokensField" editable="false" focusTraversable="false" layoutX="14.0" layoutY="14.0" style="-fx-background-color: #00000000;" />
+        <VBox alignment="TOP_CENTER" layoutX="704.0" layoutY="14.0" prefHeight="247.0" prefWidth="149.0" spacing="10.0">
+            <children>
+                <Button fx:id="hitButton" mnemonicParsing="false" text="HIT" />
+                <Button fx:id="stayButton" mnemonicParsing="false" text="STAY" />
+                <Button fx:id="quitButton" mnemonicParsing="false" text="QUIT" />
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
